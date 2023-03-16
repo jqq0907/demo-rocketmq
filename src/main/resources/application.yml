@@ -1,0 +1,17 @@
+rocketmq:
+  name-server: 10.10.10.4:9876
+  producer:
+    group: mygroup1
+    namespace: DEMO-NAME
+  consumer:
+    group: mygroup1
+    topic: DEMO-TOPIC
+    namespace: DEMO-NAME
+  pull-consumer:
+    group: mygroup1
+    topic: DEMO-TOPIC
+server:
+  port: 8110
+logging:
+  level:
+    root: info
